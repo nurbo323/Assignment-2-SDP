@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class AbstractFactoryClient {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("--- Демонстрация Абстрактной фабрики ---");
+        System.out.println("Демонстрация Абстрактной фабрики");
         System.out.println("Выберите подписку:");
         System.out.println("1. Премиум");
         System.out.println("2. Базовая");
