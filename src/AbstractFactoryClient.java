@@ -7,10 +7,10 @@ public class AbstractFactoryClient {
         System.out.println("Выберите подписку:");
         System.out.println("1. Премиум");
         System.out.println("2. Базовая");
-        System.out.print("Ваш выбор: ");
+        System.out.print(": ");
 
         int choice = scanner.nextInt();
-        scanner.nextLine(); // consume the rest of the line
+        scanner.nextLine();
 
         UFCSubscriptionFactory factory;
         if (choice == 1) {
@@ -24,16 +24,16 @@ public class AbstractFactoryClient {
 
         // Corrected method calls
         UFCFight mainEvent = factory.createUFCFight();
-        mainEvent.showMainEvent(); // Correct method from UFCFight interface
+        mainEvent.showMainEvent();
 
         UFC_BJJ_Show bjjShow = factory.createBJJShow();
         if (bjjShow != null) {
-            bjjShow.showHighlights(); // Correct method from UFC_BJJ_Show interface
+            bjjShow.showHighlights();
         }
 
         UFC_Slap_Fight slapFight = factory.createSlapFight();
         if (slapFight != null) {
-            slapFight.showLiveMatch(); // Correct method from UFC_Slap_Fight interface
+            slapFight.showLiveMatch();
         }
 
         scanner.close();

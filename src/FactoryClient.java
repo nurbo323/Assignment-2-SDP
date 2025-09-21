@@ -1,6 +1,6 @@
 public class FactoryClient {
     public static void main(String[] args) {
-        System.out.println("--- Демонстрация Фабричного метода ---");
+        System.out.println();
 
         PromotionFactory lfaFactory = new LFAFactory();
         Fight lfaFight = lfaFactory.createFight();
